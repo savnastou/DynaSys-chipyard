@@ -1,0 +1,3212 @@
+// Verilated -*- C++ -*-
+// DESCRIPTION: Verilator output: Design implementation internals
+// See VTestDriver.h for the primary calling header
+
+#include "VTestDriver__pch.h"
+#include "VTestDriver__Syms.h"
+#include "VTestDriver___024root.h"
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1283(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1283\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT___mbus_auto_buffer_out_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h66b16189__0)) 
+                     & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT___cork_auto_out_a_bits_corrupt)))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:489: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: 'A' channel Hint is corrupt (connected at generators/testchipip/src/main/scala/soc/Scratchpad.scala:33:62)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 489, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:491: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 491, "");
+        }
+    }
+    if (VL_UNLIKELY(((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT___bank_auto_xbar_in_d_valid) 
+                       & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__ram__DOT__r_read))) 
+                      & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset))) 
+                     & (9U < (0xfU & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__ram__DOT__r_source) 
+                                      >> 4U)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:549: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: 'D' channel AccessAck carries invalid source ID (connected at generators/testchipip/src/main/scala/soc/Scratchpad.scala:33:62)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 549, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:551: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 551, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1284(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1284\n"); );
+    // Body
+    if (VL_UNLIKELY(((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT___bank_auto_xbar_in_d_valid) 
+                       & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__ram__DOT__r_read)) 
+                      & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset))) 
+                     & (9U < (0xfU & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__ram__DOT__r_source) 
+                                      >> 4U)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:555: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: 'D' channel AccessAckData carries invalid source ID (connected at generators/testchipip/src/main/scala/soc/Scratchpad.scala:33:62)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 555, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:557: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 557, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT___mbus_auto_buffer_out_a_valid) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0) 
+                         & (0U != (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__a_first_counter)))) 
+                     & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT___cork_auto_out_a_bits_opcode) 
+                        != (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__opcode))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:567: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: 'A' channel opcode changed within multibeat operation (connected at generators/testchipip/src/main/scala/soc/Scratchpad.scala:33:62)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 567, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:569: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 569, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1285(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1285\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT___mbus_auto_buffer_out_a_valid) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0) 
+                         & (0U != (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__a_first_counter)))) 
+                     & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT___cork_auto_out_a_bits_param) 
+                        != (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__param))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:573: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: 'A' channel param changed within multibeat operation (connected at generators/testchipip/src/main/scala/soc/Scratchpad.scala:33:62)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 573, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:575: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 575, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT___mbus_auto_buffer_out_a_valid) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0) 
+                         & (0U != (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__a_first_counter)))) 
+                     & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT___cork_auto_out_a_bits_size) 
+                        != (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__size))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:579: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: 'A' channel size changed within multibeat operation (connected at generators/testchipip/src/main/scala/soc/Scratchpad.scala:33:62)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 579, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:581: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 581, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1286(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1286\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT___mbus_auto_buffer_out_a_valid) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0) 
+                         & (0U != (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__a_first_counter)))) 
+                     & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT___cork_auto_out_a_bits_source) 
+                        != (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__source))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:585: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: 'A' channel source changed within multibeat operation (connected at generators/testchipip/src/main/scala/soc/Scratchpad.scala:33:62)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 585, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:587: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 587, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT___mbus_auto_buffer_out_a_valid) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0) 
+                         & (0U != (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__a_first_counter)))) 
+                     & ((0xfffffffU & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT___cork_auto_out_a_bits_address) 
+                        != vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__address)))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:591: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: 'A' channel address changed with multibeat operation (connected at generators/testchipip/src/main/scala/soc/Scratchpad.scala:33:62)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 591, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:593: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 593, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1287(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1287\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT___bank_auto_xbar_in_d_valid) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0) 
+                         & (0U != (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__d_first_counter)))) 
+                     & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__ram__DOT__r_read) 
+                        != (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__opcode_1))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:597: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: 'D' channel opcode changed within multibeat operation (connected at generators/testchipip/src/main/scala/soc/Scratchpad.scala:33:62)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 597, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:599: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 599, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT___bank_auto_xbar_in_d_valid) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0) 
+                         & (0U != (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__d_first_counter)))) 
+                     & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT___bank_auto_xbar_in_d_bits_size) 
+                        != (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__size_1))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:603: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: 'D' channel size changed within multibeat operation (connected at generators/testchipip/src/main/scala/soc/Scratchpad.scala:33:62)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 603, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:605: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 605, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1288(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1288\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT___bank_auto_xbar_in_d_valid) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0) 
+                         & (0U != (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__d_first_counter)))) 
+                     & ((0xfU & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__ram__DOT__r_source) 
+                                 >> 4U)) != (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__source_1))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:609: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: 'D' channel source changed within multibeat operation (connected at generators/testchipip/src/main/scala/soc/Scratchpad.scala:33:62)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 609, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:611: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 611, "");
+        }
+    }
+    if (VL_UNLIKELY((0x3ffU & (((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT___GEN_1) 
+                                & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset))) 
+                               & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__inflight) 
+                                  >> (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT___cork_auto_out_a_bits_source)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:615: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: 'A' channel re-used a source ID (connected at generators/testchipip/src/main/scala/soc/Scratchpad.scala:33:62)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 615, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:617: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 617, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1289(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1289\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT___GEN_29) 
+                      & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset))) 
+                     & (~ ((0x3ffU & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__inflight) 
+                                      >> (0xfU & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__ram__DOT__r_source) 
+                                                  >> 4U)))) 
+                           | (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__same_cycle_resp)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:621: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: 'D' channel acknowledged for nothing inflight (connected at generators/testchipip/src/main/scala/soc/Scratchpad.scala:33:62)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 621, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:623: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 623, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT___GEN_29) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0) 
+                         & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__same_cycle_resp))) 
+                     & (~ (((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__ram__DOT__r_read) 
+                            == ((0x17U >= (0x1fU & 
+                                           ((IData)(3U) 
+                                            * (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT___cork_auto_out_a_bits_opcode))))
+                                 ? (7U & (0x911240U 
+                                          >> (0x1fU 
+                                              & ((IData)(3U) 
+                                                 * (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT___cork_auto_out_a_bits_opcode)))))
+                                 : 0U)) | ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__ram__DOT__r_read) 
+                                           == ((0x17U 
+                                                >= 
+                                                (0x1fU 
+                                                 & ((IData)(3U) 
+                                                    * (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT___cork_auto_out_a_bits_opcode))))
+                                                ? (7U 
+                                                   & (0x951240U 
+                                                      >> 
+                                                      (0x1fU 
+                                                       & ((IData)(3U) 
+                                                          * (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT___cork_auto_out_a_bits_opcode)))))
+                                                : 0U))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:627: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: 'D' channel contains improper opcode response (connected at generators/testchipip/src/main/scala/soc/Scratchpad.scala:33:62)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 627, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:629: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 629, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1290(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1290\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT___GEN_29) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0) 
+                         & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__same_cycle_resp))) 
+                     & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT___cork_auto_out_a_bits_size) 
+                        != (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT___bank_auto_xbar_in_d_bits_size))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:633: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: 'D' channel contains improper response size (connected at generators/testchipip/src/main/scala/soc/Scratchpad.scala:33:62)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 633, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:635: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 635, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT___GEN_29) 
+                      & ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__same_cycle_resp)) 
+                         & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0))) 
+                     & (~ (((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__ram__DOT__r_read) 
+                            == ((0x17U >= (0x1fU & 
+                                           ((IData)(3U) 
+                                            * (7U & (IData)(
+                                                            (0x7fffffffffULL 
+                                                             & ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__inflight_opcodes 
+                                                                 >> 
+                                                                 (0x3cU 
+                                                                  & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__ram__DOT__r_source) 
+                                                                     >> 2U))) 
+                                                                >> 1U)))))))
+                                 ? (7U & (0x911240U 
+                                          >> (0x1fU 
+                                              & ((IData)(3U) 
+                                                 * 
+                                                 (7U 
+                                                  & (IData)(
+                                                            (0x7fffffffffULL 
+                                                             & ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__inflight_opcodes 
+                                                                 >> 
+                                                                 (0x3cU 
+                                                                  & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__ram__DOT__r_source) 
+                                                                     >> 2U))) 
+                                                                >> 1U))))))))
+                                 : 0U)) | ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__ram__DOT__r_read) 
+                                           == ((0x17U 
+                                                >= 
+                                                (0x1fU 
+                                                 & ((IData)(3U) 
+                                                    * 
+                                                    (7U 
+                                                     & (IData)(
+                                                               (0x7fffffffffULL 
+                                                                & ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__inflight_opcodes 
+                                                                    >> 
+                                                                    (0x3cU 
+                                                                     & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__ram__DOT__r_source) 
+                                                                        >> 2U))) 
+                                                                   >> 1U)))))))
+                                                ? (7U 
+                                                   & (0x951240U 
+                                                      >> 
+                                                      (0x1fU 
+                                                       & ((IData)(3U) 
+                                                          * 
+                                                          (7U 
+                                                           & (IData)(
+                                                                     (0x7fffffffffULL 
+                                                                      & ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__inflight_opcodes 
+                                                                          >> 
+                                                                          (0x3cU 
+                                                                           & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__ram__DOT__r_source) 
+                                                                              >> 2U))) 
+                                                                         >> 1U))))))))
+                                                : 0U))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:639: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: 'D' channel contains improper opcode response (connected at generators/testchipip/src/main/scala/soc/Scratchpad.scala:33:62)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 639, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:641: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 641, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1291(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1291\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT___GEN_29) 
+                      & ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__same_cycle_resp)) 
+                         & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0))) 
+                     & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT___bank_auto_xbar_in_d_bits_size) 
+                        != (7U & (IData)((0x7fffffffffULL 
+                                          & ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__inflight_sizes 
+                                              >> (0x3cU 
+                                                  & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__ram__DOT__r_source) 
+                                                     >> 2U))) 
+                                             >> 1U)))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:645: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: 'D' channel contains improper response size (connected at generators/testchipip/src/main/scala/soc/Scratchpad.scala:33:62)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 645, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:647: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 647, "");
+        }
+    }
+    if (VL_UNLIKELY(((((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT___GEN_29) 
+                         & (0U == (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__a_first_counter_1))) 
+                        & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT___mbus_auto_buffer_out_a_valid)) 
+                       & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT___cork_auto_out_a_bits_source) 
+                          == (0xfU & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__ram__DOT__r_source) 
+                                      >> 4U)))) & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset))) 
+                     & (~ ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT___mbus_auto_buffer_out_d_ready)) 
+                           | (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT___bank_auto_xbar_in_a_ready)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:651: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: ready check\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 651, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:653: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 653, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1292(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1292\n"); );
+    // Body
+    if (VL_UNLIKELY((1U & ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                           & (~ ((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT___same_cycle_resp_T_1)
+                                    ? (0x3ffU & ((IData)(1U) 
+                                                 << (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT___cork_auto_out_a_bits_source)))
+                                    : 0U) != ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT___GEN_29)
+                                               ? (0x3ffU 
+                                                  & ((IData)(1U) 
+                                                     << 
+                                                     (0xfU 
+                                                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__ram__DOT__r_source) 
+                                                         >> 4U))))
+                                               : 0U)) 
+                                 | (0U == ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT___same_cycle_resp_T_1)
+                                            ? (0x3ffU 
+                                               & ((IData)(1U) 
+                                                  << (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT___cork_auto_out_a_bits_source)))
+                                            : 0U)))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:657: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: 'A' and 'D' concurrent, despite minlatency > 0 (connected at generators/testchipip/src/main/scala/soc/Scratchpad.scala:33:62)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 657, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:659: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 659, "");
+        }
+    }
+    if (VL_UNLIKELY((1U & ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                           & (~ (((0U == (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__inflight)) 
+                                  | (0U == vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__plusarg_reader__DOT__myplus)) 
+                                 | (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__watchdog 
+                                    < vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__plusarg_reader__DOT__myplus))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:663: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: TileLink timeout expired (connected at generators/testchipip/src/main/scala/soc/Scratchpad.scala:33:62)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 663, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:665: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 665, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1293(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1293\n"); );
+    // Body
+    if (VL_UNLIKELY((1U & ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                           & (~ (((0U == (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__inflight_1)) 
+                                  | (0U == vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__plusarg_reader_1__DOT__myplus)) 
+                                 | (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__watchdog_1 
+                                    < vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bank__DOT__fragmenter__DOT__monitor__DOT__plusarg_reader_1__DOT__myplus))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_54.sv:681: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor: Assertion failed: TileLink timeout expired (connected at generators/testchipip/src/main/scala/soc/Scratchpad.scala:33:62)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 681, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_54.sv:683: Assertion failed in %NTestDriver.testHarness.chiptop0.system.bank.fragmenter.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_54.sv", 683, "");
+        }
+    }
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT__wrap 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT__wrap;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT__reg_misa 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT__reg_misa;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_clint__DOT__fragmenter__DOT__repeater__DOT__full 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_clint__DOT__fragmenter__DOT__repeater__DOT__full;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_debug__DOT__fragmenter__DOT__repeater__DOT__full 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_debug__DOT__fragmenter__DOT__repeater__DOT__full;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__monitor__DOT__a_first_counter 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__monitor__DOT__a_first_counter;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__InclusiveCache_inner_TLBuffer__DOT__monitor__DOT__a_first_counter 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__InclusiveCache_inner_TLBuffer__DOT__monitor__DOT__a_first_counter;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__victimLFSR_prng__DOT__state_14 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__victimLFSR_prng__DOT__state_14;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__victimLFSR_prng__DOT__state_13 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__victimLFSR_prng__DOT__state_13;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__victimLFSR_prng__DOT__state_11 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__victimLFSR_prng__DOT__state_11;
+    if (VL_UNLIKELY(((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                     & (0U != (3U & (((3U & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT__insn_ret) 
+                                             + (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT__insn_call))) 
+                                      + (3U & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT__insn_break) 
+                                               + (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__wb_xcpt)))) 
+                                     >> 1U)))))) {
+        VL_WRITEF("[%0t] %%Error: CSRFile.sv:764: Assertion failed in %NTestDriver.testHarness.chiptop0.system.tile_prci_domain.element_reset_domain_rockettile.core.csr: Assertion failed: these conditions must be mutually exclusive\n    at CSR.scala:1004 assert(PopCount(insn_ret :: insn_call :: insn_break :: io.exception :: Nil) <= 1.U, \"these conditions must be mutually exclusive\")\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/CSRFile.sv", 764, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: CSRFile.sv:766: Assertion failed in %NTestDriver.testHarness.chiptop0.system.tile_prci_domain.element_reset_domain_rockettile.core.csr\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/CSRFile.sv", 766, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1294(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1294\n"); );
+    // Body
+    if (VL_UNLIKELY((1U & ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                           & (~ ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT__reg_singleStepped)) 
+                                 | (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__wb_valid)))))))) {
+        VL_WRITEF("[%0t] %%Error: CSRFile.sv:770: Assertion failed in %NTestDriver.testHarness.chiptop0.system.tile_prci_domain.element_reset_domain_rockettile.core.csr: Assertion failed\n    at CSR.scala:1013 assert(!reg_singleStepped || io.retire === 0.U)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/CSRFile.sv", 770, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: CSRFile.sv:772: Assertion failed in %NTestDriver.testHarness.chiptop0.system.tile_prci_domain.element_reset_domain_rockettile.core.csr\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/CSRFile.sv", 772, "");
+        }
+    }
+    if (VL_UNLIKELY(((((~ (IData)(vlSelf->TestDriver__DOT__reset)) 
+                       & (IData)(vlSelf->TestDriver__DOT__verbose)) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT___csr_wen_T_4) 
+                         & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT____VdfgTmp_h0bbd43ac__0))) 
+                     & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset))))) {
+        VL_FWRITEF(0x80000002U,"Performance Counter 0: Event = %x, Counter = %x\n",
+                   64,vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT__reg_hpmevent_0,
+                   40,vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT__value_2);
+    }
+    if (VL_UNLIKELY(((((~ (IData)(vlSelf->TestDriver__DOT__reset)) 
+                       & (IData)(vlSelf->TestDriver__DOT__verbose)) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT___csr_wen_T_4) 
+                         & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT____VdfgTmp_h77d1050a__0))) 
+                     & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset))))) {
+        VL_FWRITEF(0x80000002U,"Performance Counter 1: Event = %x, Counter = %x\n",
+                   64,vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT__reg_hpmevent_1,
+                   40,vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT__value_3);
+    }
+    if (VL_UNLIKELY(((((~ (IData)(vlSelf->TestDriver__DOT__reset)) 
+                       & (IData)(vlSelf->TestDriver__DOT__verbose)) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT___csr_wen_T_4) 
+                         & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT____VdfgTmp_h53799bca__0))) 
+                     & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset))))) {
+        VL_FWRITEF(0x80000002U,"Performance Counter 2: Event = %x, Counter = %x\n",
+                   64,vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT__reg_hpmevent_2,
+                   40,vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT__value_4);
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1299(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1299\n"); );
+    // Body
+    if (VL_UNLIKELY(((((~ (IData)(vlSelf->TestDriver__DOT__reset)) 
+                       & (IData)(vlSelf->TestDriver__DOT__verbose)) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT___csr_wen_T_4) 
+                         & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT____VdfgTmp_h07f6ee37__0))) 
+                     & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset))))) {
+        VL_FWRITEF(0x80000002U,"Performance Counter 27: Event = %x, Counter = %x\n",
+                   64,vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT__reg_hpmevent_27,
+                   40,vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT__value_29);
+    }
+    if (VL_UNLIKELY(((((~ (IData)(vlSelf->TestDriver__DOT__reset)) 
+                       & (IData)(vlSelf->TestDriver__DOT__verbose)) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT___csr_wen_T_4) 
+                         & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT____VdfgTmp_h629ca375__0))) 
+                     & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset))))) {
+        VL_FWRITEF(0x80000002U,"Performance Counter 28: Event = %x, Counter = %x\n",
+                   64,vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT__reg_hpmevent_28,
+                   40,vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT__value_30);
+    }
+    if (VL_UNLIKELY(((((~ (IData)(vlSelf->TestDriver__DOT__reset)) 
+                       & (IData)(vlSelf->TestDriver__DOT__verbose)) 
+                      & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT___csr_wen_T_4)) 
+                     & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset))))) {
+        VL_FWRITEF(0x80000002U,"Cycle Counter (mcycle) = %x\nRetired Instructions Counter (minstret) = %x\n",
+                   64,vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT___csr_io_time,
+                   64,vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__csr__DOT__value);
+    }
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__victimLFSR_prng__DOT__state_0 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__victimLFSR_prng__DOT__state_0;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__buffer__DOT__monitor__DOT__c_first_counter 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__buffer__DOT__monitor__DOT__c_first_counter;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__tlMasterXbar__DOT__monitor__DOT__c_first_counter 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__tlMasterXbar__DOT__monitor__DOT__c_first_counter;
+    if (VL_UNLIKELY((1U & ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                           & (~ (((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__wipeCount) 
+                                  >> 0xaU) | (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT____Vcellinp__directory__io_read_valid)))))))) {
+        VL_WRITEF("[%0t] %%Error: Directory.sv:175: Assertion failed in %NTestDriver.testHarness.chiptop0.system.coh_wrapper.l2.inclusive_cache_bank_sched.directory: Assertion failed\n    at Directory.scala:86 assert (wipeDone || !io.read.valid)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/Directory.sv", 175, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: Directory.sv:177: Assertion failed in %NTestDriver.testHarness.chiptop0.system.coh_wrapper.l2.inclusive_cache_bank_sched.directory\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/Directory.sv", 177, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1300(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1300\n"); );
+    // Body
+    if (VL_UNLIKELY((1U & ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                           & (~ ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT____Vcellinp__directory__io_read_valid)) 
+                                 | ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__wipeCount) 
+                                    >> 0xaU))))))) {
+        VL_WRITEF("[%0t] %%Error: Directory.sv:181: Assertion failed in %NTestDriver.testHarness.chiptop0.system.coh_wrapper.l2.inclusive_cache_bank_sched.directory: Assertion failed\n    at Directory.scala:91 assert (!io.read.valid || wipeDone)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/Directory.sv", 181, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: Directory.sv:183: Assertion failed in %NTestDriver.testHarness.chiptop0.system.coh_wrapper.l2.inclusive_cache_bank_sched.directory\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/Directory.sv", 183, "");
+        }
+    }
+    if (VL_UNLIKELY((1U & ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                           & (~ ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__ren1)) 
+                                 | (0U == ((((0x2ffU 
+                                              >= (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__victimLFSR)) 
+                                             << 5U) 
+                                            | (((0x27fU 
+                                                 >= (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__victimLFSR)) 
+                                                << 4U) 
+                                               | ((8U 
+                                                   & ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__victimLFSR_prng__DOT__state_9)) 
+                                                      << 3U)) 
+                                                  | (((0x17fU 
+                                                       >= (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__victimLFSR)) 
+                                                      << 2U) 
+                                                     | ((2U 
+                                                         & ((~ (IData)(
+                                                                       (0U 
+                                                                        != (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT___GEN_0)))) 
+                                                            << 1U)) 
+                                                        | (1U 
+                                                           & (~ (IData)(
+                                                                        (0U 
+                                                                         != (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT___GEN)))))))))) 
+                                           & (((0x37fU 
+                                                < (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__victimLFSR)) 
+                                               << 5U) 
+                                              | (((0x2ffU 
+                                                   < (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__victimLFSR)) 
+                                                  << 4U) 
+                                                 | (((0x27fU 
+                                                      < (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__victimLFSR)) 
+                                                     << 3U) 
+                                                    | (((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__victimLFSR_prng__DOT__state_9) 
+                                                        << 2U) 
+                                                       | (((0x17fU 
+                                                            < (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__victimLFSR)) 
+                                                           << 1U) 
+                                                          | (0U 
+                                                             != (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT___GEN_0))))))))))))))) {
+        VL_WRITEF("[%0t] %%Error: Directory.sv:187: Assertion failed in %NTestDriver.testHarness.chiptop0.system.coh_wrapper.l2.inclusive_cache_bank_sched.directory: Assertion failed\n    at Directory.scala:122 assert (!ren2 || ((victimSimp >> 1) & ~victimSimp) === 0.U) // monotone\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/Directory.sv", 187, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: Directory.sv:189: Assertion failed in %NTestDriver.testHarness.chiptop0.system.coh_wrapper.l2.inclusive_cache_bank_sched.directory\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/Directory.sv", 189, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1301(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1301\n"); );
+    // Body
+    if (VL_UNLIKELY((1U & ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                           & (~ ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__ren1)) 
+                                 | (1U == (0xfU & (
+                                                   (7U 
+                                                    & ((3U 
+                                                        & ((1U 
+                                                            & (~ (IData)(
+                                                                         (0U 
+                                                                          != (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT___GEN))))) 
+                                                           + (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT___view___05FT_71))) 
+                                                       + 
+                                                       (3U 
+                                                        & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT___view___05FT_72) 
+                                                           + (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT___view___05FT_73))))) 
+                                                   + 
+                                                   (7U 
+                                                    & ((3U 
+                                                        & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT___view___05FT_74) 
+                                                           + (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT___view___05FT_75))) 
+                                                       + 
+                                                       (3U 
+                                                        & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT___view___05FT_76) 
+                                                           + 
+                                                           (0x37fU 
+                                                            < (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__directory__DOT__victimLFSR))))))))))))))) {
+        VL_WRITEF("[%0t] %%Error: Directory.sv:193: Assertion failed in %NTestDriver.testHarness.chiptop0.system.coh_wrapper.l2.inclusive_cache_bank_sched.directory: Assertion failed\n    at Directory.scala:123 assert (!ren2 || PopCount(victimWayOH) === 1.U)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/Directory.sv", 193, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: Directory.sv:195: Assertion failed in %NTestDriver.testHarness.chiptop0.system.coh_wrapper.l2.inclusive_cache_bank_sched.directory\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/Directory.sv", 195, "");
+        }
+    }
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__domain__DOT__plic__DOT__monitor__DOT__d_first_counter 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__domain__DOT__plic__DOT__monitor__DOT__d_first_counter;
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1302(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1302\n"); );
+    // Body
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_plic__DOT__fragmenter__DOT__monitor__DOT__d_first_counter 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_plic__DOT__fragmenter__DOT__monitor__DOT__d_first_counter;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_plic__DOT__fragmenter__DOT__monitor__DOT__d_first_counter_1 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_plic__DOT__fragmenter__DOT__monitor__DOT__d_first_counter_1;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_plic__DOT__fragmenter__DOT__acknum 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_plic__DOT__fragmenter__DOT__acknum;
+    if (VL_UNLIKELY(((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                     & (0U != ((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__domain__DOT__plic__DOT__claimer_1) 
+                                 << 1U) | (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__domain__DOT__plic__DOT__claimer_0)) 
+                               & ((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__domain__DOT__plic__DOT__claimer_1) 
+                                    << 1U) | (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__domain__DOT__plic__DOT__claimer_0)) 
+                                  - (IData)(1U))))))) {
+        VL_WRITEF("[%0t] %%Error: TLPLIC.sv:156: Assertion failed in %NTestDriver.testHarness.chiptop0.system.domain.plic: Assertion failed\n    at Plic.scala:245 assert((claimer.asUInt & (claimer.asUInt - 1.U)) === 0.U) // One-Hot\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLPLIC.sv", 156, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLPLIC.sv:158: Assertion failed in %NTestDriver.testHarness.chiptop0.system.domain.plic\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLPLIC.sv", 158, "");
+        }
+    }
+    if (VL_UNLIKELY(((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                     & (0U != ((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__domain__DOT__plic__DOT__completer_1) 
+                                 << 1U) | (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__domain__DOT__plic__DOT__completer_0)) 
+                               & ((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__domain__DOT__plic__DOT__completer_1) 
+                                    << 1U) | (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__domain__DOT__plic__DOT__completer_0)) 
+                                  - (IData)(1U))))))) {
+        VL_WRITEF("[%0t] %%Error: TLPLIC.sv:162: Assertion failed in %NTestDriver.testHarness.chiptop0.system.domain.plic: Assertion failed\n    at Plic.scala:262 assert((completer.asUInt & (completer.asUInt - 1.U)) === 0.U) // One-Hot\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLPLIC.sv", 162, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLPLIC.sv:164: Assertion failed in %NTestDriver.testHarness.chiptop0.system.domain.plic\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLPLIC.sv", 164, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1303(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1303\n"); );
+    // Body
+    if (VL_UNLIKELY(((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                     & ((1U & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__domain__DOT__plic__DOT__out_back_q__DOT__ram[1U] 
+                               >> 0x18U)) != (1U & 
+                                              (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__domain__DOT__plic__DOT__out_back_q__DOT__ram[1U] 
+                                               >> 0x18U)))))) {
+        VL_WRITEF("[%0t] %%Error: TLPLIC.sv:168: Assertion failed in %NTestDriver.testHarness.chiptop0.system.domain.plic: Assertion failed: completerDev should be consistent for all harts\n    at Plic.scala:292 assert(completerDev === data.extract(log2Ceil(nDevices+1)-1, 0),\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLPLIC.sv", 168, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLPLIC.sv:170: Assertion failed in %NTestDriver.testHarness.chiptop0.system.domain.plic\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLPLIC.sv", 170, "");
+        }
+    }
+    vlSelf->__Vdlyvset__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__btb__DOT__table_ext__DOT__Memory__v0 = 0U;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__btb__DOT__history 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__btb__DOT__history;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__domain__DOT__plic__DOT__gateways_gateway__DOT__inFlight 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__domain__DOT__plic__DOT__gateways_gateway__DOT__inFlight;
+    vlSelf->__Vdlyvset__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__requests__DOT__data_ext__DOT__Memory__v0 = 0U;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__domain__DOT__plic__DOT__monitor__DOT__a_first_counter 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__domain__DOT__plic__DOT__monitor__DOT__a_first_counter;
+    if (VL_UNLIKELY((1U & ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                           & (~ ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_plic__DOT__fragmenter__DOT__repeater__DOT__full)) 
+                                 | ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT___cbus_auto_coupler_to_plic_fragmenter_out_a_bits_opcode) 
+                                    >> 2U))))))) {
+        VL_WRITEF("[%0t] %%Error: TLFragmenter_4.sv:155: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.coupler_to_plic.fragmenter: Assertion failed\n    at Fragmenter.scala:311 assert (!repeater.io.full || !aHasData)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLFragmenter_4.sv", 155, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLFragmenter_4.sv:157: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.coupler_to_plic.fragmenter\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLFragmenter_4.sv", 157, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1304(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1304\n"); );
+    // Body
+    if (VL_UNLIKELY((1U & ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                           & (~ ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_plic__DOT__fragmenter__DOT__repeater__DOT__full)) 
+                                 | (0xffU == (0xffU 
+                                              & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_plic__DOT__fragmenter__DOT__repeater__DOT__full)
+                                                  ? (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_plic__DOT__fragmenter__DOT__repeater__DOT__saved_mask)
+                                                  : 
+                                                 ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U] 
+                                                   << 0xfU) 
+                                                  | (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U] 
+                                                     >> 0x11U))))))))))) {
+        VL_WRITEF("[%0t] %%Error: TLFragmenter_4.sv:161: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.coupler_to_plic.fragmenter: Assertion failed\n    at Fragmenter.scala:314 assert (!repeater.io.full || in_a.bits.mask === fullMask)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLFragmenter_4.sv", 161, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLFragmenter_4.sv:163: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.coupler_to_plic.fragmenter\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLFragmenter_4.sv", 163, "");
+        }
+    }
+    if (VL_UNLIKELY((1U & ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                           & (~ ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_l2_ctrl__DOT__fragmenter__DOT__repeater__DOT__full)) 
+                                 | ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_l2_ctrl__DOT__fragmenter__DOT___repeater_io_deq_bits_opcode) 
+                                    >> 2U))))))) {
+        VL_WRITEF("[%0t] %%Error: TLFragmenter_2.sv:163: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.coupler_to_l2_ctrl.fragmenter: Assertion failed\n    at Fragmenter.scala:311 assert (!repeater.io.full || !aHasData)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLFragmenter_2.sv", 163, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLFragmenter_2.sv:165: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.coupler_to_l2_ctrl.fragmenter\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLFragmenter_2.sv", 165, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1305(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1305\n"); );
+    // Body
+    if (VL_UNLIKELY((1U & ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                           & (~ ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_l2_ctrl__DOT__fragmenter__DOT__repeater__DOT__full)) 
+                                 | (0xffU == (0xffU 
+                                              & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_l2_ctrl__DOT__fragmenter__DOT__repeater__DOT__full)
+                                                  ? (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_l2_ctrl__DOT__fragmenter__DOT__repeater__DOT__saved_mask)
+                                                  : 
+                                                 ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U] 
+                                                   << 0xfU) 
+                                                  | (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U] 
+                                                     >> 0x11U))))))))))) {
+        VL_WRITEF("[%0t] %%Error: TLFragmenter_2.sv:169: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.coupler_to_l2_ctrl.fragmenter: Assertion failed\n    at Fragmenter.scala:314 assert (!repeater.io.full || in_a.bits.mask === fullMask)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLFragmenter_2.sv", 169, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLFragmenter_2.sv:171: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.coupler_to_l2_ctrl.fragmenter\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLFragmenter_2.sv", 171, "");
+        }
+    }
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__ctrls__DOT__monitor__DOT__a_first_counter 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__ctrls__DOT__monitor__DOT__a_first_counter;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__ctrls__DOT__monitor__DOT__d_first_counter 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__ctrls__DOT__monitor__DOT__d_first_counter;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__tlb__DOT__superpage_entries_1_tag_v 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__tlb__DOT__superpage_entries_1_tag_v;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__tlb__DOT__superpage_entries_2_tag_v 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__tlb__DOT__superpage_entries_2_tag_v;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__tlb__DOT__superpage_entries_3_tag_v 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__tlb__DOT__superpage_entries_3_tag_v;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__dcache__DOT__uncachedReqs_0_signed 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__dcache__DOT__uncachedReqs_0_signed;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bootrom_domain__DOT__bootrom__DOT__monitor__DOT__a_first_counter 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__bootrom_domain__DOT__bootrom__DOT__monitor__DOT__a_first_counter;
+    if (VL_UNLIKELY((1U & ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                           & (~ ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_bootrom__DOT__fragmenter__DOT__repeater__DOT__full)) 
+                                 | (0xffU == (0xffU 
+                                              & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_bootrom__DOT__fragmenter__DOT__repeater__DOT__full)
+                                                  ? (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_bootrom__DOT__fragmenter__DOT__repeater__DOT__saved_mask)
+                                                  : 
+                                                 ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U] 
+                                                   << 0xfU) 
+                                                  | (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U] 
+                                                     >> 0x11U))))))))))) {
+        VL_WRITEF("[%0t] %%Error: TLFragmenter_6.sv:147: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.coupler_to_bootrom.fragmenter: Assertion failed\n    at Fragmenter.scala:314 assert (!repeater.io.full || in_a.bits.mask === fullMask)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLFragmenter_6.sv", 147, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLFragmenter_6.sv:149: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.coupler_to_bootrom.fragmenter\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLFragmenter_6.sv", 149, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1306(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1306\n"); );
+    // Body
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__mem_ctrl_toint 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__mem_ctrl_toint;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__mem_reg_inst 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__mem_reg_inst;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__mem_ctrl_fromint 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__mem_ctrl_fromint;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__mem_ctrl_fma 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__mem_ctrl_fma;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__mem_ctrl_typeTagOut 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__mem_ctrl_typeTagOut;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__mem_reg_valid 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__mem_reg_valid;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__mem_ctrl_div 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__mem_ctrl_div;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__wen 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__wen;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__mem_ctrl_sqrt 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__mem_ctrl_sqrt;
+    vlSelf->__Vdlyvset__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__regfile_ext__DOT__Memory__v0 = 0U;
+    vlSelf->__Vdlyvset__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__regfile_ext__DOT__Memory__v1 = 0U;
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__load_wb) 
+                      & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset))) 
+                     & (~ ((7U != (((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT____VdfgTmp_h093aa888__0)
+                                     ? 0U : (6U & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT___wdata_rawIn_adjustedExp_T_4) 
+                                                   >> 9U))) 
+                                   | (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT___GEN))) 
+                           | ((1U & (IData)((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT___GEN_0 
+                                             >> 0x3cU))) 
+                              == (0xfffffU == (0xfffffU 
+                                               & (IData)(
+                                                         (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT___GEN_0 
+                                                          >> 0x20U)))))))))) {
+        VL_WRITEF("[%0t] %%Error: FPU.sv:249: Assertion failed in %NTestDriver.testHarness.chiptop0.system.tile_prci_domain.element_reset_domain_rockettile.fpuOpt: Assertion failed\n    at FPU.scala:798 assert(consistent(wdata))\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/FPU.sv", 249, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: FPU.sv:251: Assertion failed in %NTestDriver.testHarness.chiptop0.system.tile_prci_domain.element_reset_domain_rockettile.fpuOpt\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/FPU.sv", 251, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1307(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1307\n"); );
+    // Body
+    if (VL_UNLIKELY((1U & (((((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__wbInfo_0_cp)) 
+                              & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__wen)) 
+                             | (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__divSqrt_wen)) 
+                            & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset))) 
+                           & (~ ((7U != ((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__divSqrt_wen)
+                                            ? (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__divSqrt_typeTag)
+                                            : (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__wbInfo_0_typeTag))
+                                           ? vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT___wdata_T_29[1U]
+                                           : (0xffe00000U 
+                                              | (IData)(
+                                                        ((0xfffff00000000ULL 
+                                                          | (((QData)((IData)(
+                                                                              (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT___wdata_T_29[0U] 
+                                                                               >> 0x1fU))) 
+                                                              << 0x34U) 
+                                                             | (QData)((IData)(
+                                                                               ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT___wdata_T_29[1U] 
+                                                                                << 0x1fU) 
+                                                                                | (0x7fffffffU 
+                                                                                & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT___wdata_T_29[0U])))))) 
+                                                         >> 0x20U)))) 
+                                         >> 0x1dU)) 
+                                 | ((1U & ((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__divSqrt_wen)
+                                              ? (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__divSqrt_typeTag)
+                                              : (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__wbInfo_0_typeTag))
+                                             ? vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT___wdata_T_29[1U]
+                                             : (0xffe00000U 
+                                                | (IData)(
+                                                          ((0xfffff00000000ULL 
+                                                            | (((QData)((IData)(
+                                                                                (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT___wdata_T_29[0U] 
+                                                                                >> 0x1fU))) 
+                                                                << 0x34U) 
+                                                               | (QData)((IData)(
+                                                                                ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT___wdata_T_29[1U] 
+                                                                                << 0x1fU) 
+                                                                                | (0x7fffffffU 
+                                                                                & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT___wdata_T_29[0U])))))) 
+                                                           >> 0x20U)))) 
+                                           >> 0x1cU)) 
+                                    == (0xfffffU == 
+                                        (0xfffffU & 
+                                         (((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__divSqrt_wen)
+                                            ? (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__divSqrt_typeTag)
+                                            : (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT__wbInfo_0_typeTag))
+                                           ? vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT___wdata_T_29[1U]
+                                           : (0xffe00000U 
+                                              | (IData)(
+                                                        ((0xfffff00000000ULL 
+                                                          | (((QData)((IData)(
+                                                                              (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT___wdata_T_29[0U] 
+                                                                               >> 0x1fU))) 
+                                                              << 0x34U) 
+                                                             | (QData)((IData)(
+                                                                               ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT___wdata_T_29[1U] 
+                                                                                << 0x1fU) 
+                                                                                | (0x7fffffffU 
+                                                                                & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__fpuOpt__DOT___wdata_T_29[0U])))))) 
+                                                         >> 0x20U))))))))))))) {
+        VL_WRITEF("[%0t] %%Error: FPU.sv:255: Assertion failed in %NTestDriver.testHarness.chiptop0.system.tile_prci_domain.element_reset_domain_rockettile.fpuOpt: Assertion failed\n    at FPU.scala:939 assert(consistent(wdata))\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/FPU.sv", 255, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: FPU.sv:257: Assertion failed in %NTestDriver.testHarness.chiptop0.system.tile_prci_domain.element_reset_domain_rockettile.fpuOpt\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/FPU.sv", 257, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1308(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1308\n"); );
+    // Body
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_l2_ctrl__DOT__buffer__DOT__monitor__DOT__d_first_counter 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_l2_ctrl__DOT__buffer__DOT__monitor__DOT__d_first_counter;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_l2_ctrl__DOT__fragmenter__DOT__monitor__DOT__d_first_counter_2 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_l2_ctrl__DOT__fragmenter__DOT__monitor__DOT__d_first_counter_2;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_l2_ctrl__DOT__fragmenter__DOT__monitor__DOT__d_first_counter 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_l2_ctrl__DOT__fragmenter__DOT__monitor__DOT__d_first_counter;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_l2_ctrl__DOT__fragmenter__DOT__monitor__DOT__d_first_counter_1 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_l2_ctrl__DOT__fragmenter__DOT__monitor__DOT__d_first_counter_1;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_l2_ctrl__DOT__fragmenter__DOT__acknum 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_l2_ctrl__DOT__fragmenter__DOT__acknum;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__clint_domain__DOT__clint__DOT__monitor__DOT__a_first_counter 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__clint_domain__DOT__clint__DOT__monitor__DOT__a_first_counter;
+    if (VL_UNLIKELY((1U & ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                           & (~ ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_clint__DOT__fragmenter__DOT__repeater__DOT__full)) 
+                                 | ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT___cbus_auto_coupler_to_clint_fragmenter_out_a_bits_opcode) 
+                                    >> 2U))))))) {
+        VL_WRITEF("[%0t] %%Error: TLFragmenter_3.sv:155: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.coupler_to_clint.fragmenter: Assertion failed\n    at Fragmenter.scala:311 assert (!repeater.io.full || !aHasData)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLFragmenter_3.sv", 155, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLFragmenter_3.sv:157: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.coupler_to_clint.fragmenter\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLFragmenter_3.sv", 157, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1309(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1309\n"); );
+    // Body
+    if (VL_UNLIKELY((1U & ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                           & (~ ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_clint__DOT__fragmenter__DOT__repeater__DOT__full)) 
+                                 | (0xffU == (0xffU 
+                                              & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_clint__DOT__fragmenter__DOT__repeater__DOT__full)
+                                                  ? (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_clint__DOT__fragmenter__DOT__repeater__DOT__saved_mask)
+                                                  : 
+                                                 ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U] 
+                                                   << 0xfU) 
+                                                  | (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U] 
+                                                     >> 0x11U))))))))))) {
+        VL_WRITEF("[%0t] %%Error: TLFragmenter_3.sv:161: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.coupler_to_clint.fragmenter: Assertion failed\n    at Fragmenter.scala:314 assert (!repeater.io.full || in_a.bits.mask === fullMask)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLFragmenter_3.sv", 161, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLFragmenter_3.sv:163: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.coupler_to_clint.fragmenter\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLFragmenter_3.sv", 163, "");
+        }
+    }
+    if (VL_UNLIKELY((1U & ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                           & (~ ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_debug__DOT__fragmenter__DOT__repeater__DOT__full)) 
+                                 | ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT___cbus_auto_coupler_to_debug_fragmenter_out_a_bits_opcode) 
+                                    >> 2U))))))) {
+        VL_WRITEF("[%0t] %%Error: TLFragmenter_5.sv:155: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.coupler_to_debug.fragmenter: Assertion failed\n    at Fragmenter.scala:311 assert (!repeater.io.full || !aHasData)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLFragmenter_5.sv", 155, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLFragmenter_5.sv:157: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.coupler_to_debug.fragmenter\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLFragmenter_5.sv", 157, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1310(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1310\n"); );
+    // Body
+    if (VL_UNLIKELY((1U & ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset)) 
+                           & (~ ((~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_debug__DOT__fragmenter__DOT__repeater__DOT__full)) 
+                                 | (0xffU == (0xffU 
+                                              & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_debug__DOT__fragmenter__DOT__repeater__DOT__full)
+                                                  ? (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__coupler_to_debug__DOT__fragmenter__DOT__repeater__DOT__saved_mask)
+                                                  : 
+                                                 ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U] 
+                                                   << 0xfU) 
+                                                  | (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U] 
+                                                     >> 0x11U))))))))))) {
+        VL_WRITEF("[%0t] %%Error: TLFragmenter_5.sv:161: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.coupler_to_debug.fragmenter: Assertion failed\n    at Fragmenter.scala:314 assert (!repeater.io.full || in_a.bits.mask === fullMask)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLFragmenter_5.sv", 161, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLFragmenter_5.sv:163: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.coupler_to_debug.fragmenter\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLFragmenter_5.sv", 163, "");
+        }
+    }
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__dcache__DOT__s2_req_addr 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__dcache__DOT__s2_req_addr;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__ctrls__DOT__flushInValid 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__ctrls__DOT__flushInValid;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__div__DOT__neg_out 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__div__DOT__neg_out;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__div__DOT__count 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__div__DOT__count;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__div__DOT__remainder[0U] 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__div__DOT__remainder[0U];
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__div__DOT__remainder[1U] 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__div__DOT__remainder[1U];
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__div__DOT__remainder[2U] 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__div__DOT__remainder[2U];
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__div__DOT__remainder[3U] 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__div__DOT__remainder[3U];
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__div__DOT__remainder[4U] 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__div__DOT__remainder[4U];
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__div_io_kill_REG 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__core__DOT__div_io_kill_REG;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__sinkX__DOT__x_q__DOT__full 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__coh_wrapper__DOT__l2__DOT__inclusive_cache_bank_sched__DOT__sinkX__DOT__x_q__DOT__full;
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1313(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1313\n"); );
+    // Body
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__tlb__DOT__sectored_entries_0_6_tag_v 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__tlb__DOT__sectored_entries_0_6_tag_v;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__tlb__DOT__sectored_entries_0_4_tag_v 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__tlb__DOT__sectored_entries_0_4_tag_v;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__tlb__DOT__sectored_entries_0_1_tag_v 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__tlb__DOT__sectored_entries_0_1_tag_v;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__tlb__DOT__sectored_entries_0_2_tag_v 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__tlb__DOT__sectored_entries_0_2_tag_v;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__tlb__DOT__sectored_entries_0_7_tag_v 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__tlb__DOT__sectored_entries_0_7_tag_v;
+    vlSelf->__Vdly__TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__tlb__DOT__sectored_entries_0_5_tag_v 
+        = vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__tile_prci_domain__DOT__element_reset_domain_rockettile__DOT__frontend__DOT__tlb__DOT__sectored_entries_0_5_tag_v;
+    if (VL_UNLIKELY(((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                     & (IData)(vlSelf->__VdfgTmp_hc1b4cf11__0)))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:219: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel carries AcquireBlock type which is unexpected using diplomatic parameters (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 219, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:221: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 221, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc1b4cf11__0)) 
+                     & (~ (IData)(((0x40180U == (0xfffc0U 
+                                                 & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])) 
+                                   & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__monitor__DOT___GEN_8))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:225: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel carries AcquireBlock from a client which does not support Probe (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 225, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:227: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 227, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1314(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1314\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc1b4cf11__0)) 
+                     & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__fixer__DOT__monitor__DOT__source_ok))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:231: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel AcquireBlock carries invalid source ID (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 231, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:233: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 233, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc1b4cf11__0)) 
+                     & (2U >= (0xfU & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                       >> 6U)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:237: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel AcquireBlock smaller than a beat (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 237, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:239: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 239, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1315(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1315\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc1b4cf11__0)) 
+                     & (0U != (0xfffU & ((~ ((IData)(0xfffU) 
+                                             << (0xfU 
+                                                 & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                    >> 6U)))) 
+                                         & ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                             << 0xcU) 
+                                            | (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                               >> 0x14U)))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:243: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel AcquireBlock address not aligned to size (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 243, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:245: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 245, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc1b4cf11__0)) 
+                     & (2U < (7U & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                    >> 3U)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:249: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel AcquireBlock carries invalid grow param (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 249, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:251: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 251, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1316(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1316\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc1b4cf11__0)) 
+                     & (0xffU != (0xffU & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U] 
+                                           >> 0x11U)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:255: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel AcquireBlock contains invalid mask (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 255, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:257: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 257, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc1b4cf11__0)) 
+                     & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[3U] 
+                        >> 0x19U)))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:261: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel AcquireBlock is corrupt (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 261, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:263: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 263, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1317(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1317\n"); );
+    // Body
+    if (VL_UNLIKELY(((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                     & (IData)(vlSelf->__VdfgTmp_h713f4ad2__0)))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:267: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel carries AcquirePerm type which is unexpected using diplomatic parameters (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 267, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:269: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 269, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h713f4ad2__0)) 
+                     & (~ (IData)(((0x40180U == (0xfffc0U 
+                                                 & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])) 
+                                   & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__monitor__DOT___GEN_8))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:273: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel carries AcquirePerm from a client which does not support Probe (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 273, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:275: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 275, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1318(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1318\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h713f4ad2__0)) 
+                     & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__fixer__DOT__monitor__DOT__source_ok))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:279: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel AcquirePerm carries invalid source ID (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 279, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:281: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 281, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h713f4ad2__0)) 
+                     & (2U >= (0xfU & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                       >> 6U)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:285: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel AcquirePerm smaller than a beat (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 285, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:287: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 287, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1319(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1319\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h713f4ad2__0)) 
+                     & (0U != (0xfffU & ((~ ((IData)(0xfffU) 
+                                             << (0xfU 
+                                                 & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                    >> 6U)))) 
+                                         & ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                             << 0xcU) 
+                                            | (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                               >> 0x14U)))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:291: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel AcquirePerm address not aligned to size (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 291, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:293: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 293, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h713f4ad2__0)) 
+                     & (2U < (7U & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                    >> 3U)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:297: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel AcquirePerm carries invalid grow param (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 297, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:299: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 299, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1320(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1320\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h713f4ad2__0)) 
+                     & (~ (IData)((0U != (7U & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                >> 3U)))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:303: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel AcquirePerm requests NtoB (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 303, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:305: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 305, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h713f4ad2__0)) 
+                     & (0xffU != (0xffU & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U] 
+                                           >> 0x11U)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:309: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel AcquirePerm contains invalid mask (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 309, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:311: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 311, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1321(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1321\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h713f4ad2__0)) 
+                     & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[3U] 
+                        >> 0x19U)))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:315: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel AcquirePerm is corrupt (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 315, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:317: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 317, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h88ad6e02__0)) 
+                     & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__fixer__DOT__monitor__DOT___GEN_18))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:321: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel carries Get type which master claims it can't emit (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 321, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:323: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 323, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1322(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1322\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h88ad6e02__0)) 
+                     & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__monitor__DOT___GEN_8))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:327: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel carries Get type which slave claims it can't support (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 327, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:329: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 329, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h88ad6e02__0)) 
+                     & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__fixer__DOT__monitor__DOT__source_ok))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:333: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel Get carries invalid source ID (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 333, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:335: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 335, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1323(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1323\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h88ad6e02__0)) 
+                     & (0U != (0xfffU & ((~ ((IData)(0xfffU) 
+                                             << (0xfU 
+                                                 & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                    >> 6U)))) 
+                                         & ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                             << 0xcU) 
+                                            | (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                               >> 0x14U)))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:339: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel Get address not aligned to size (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 339, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:341: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 341, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h88ad6e02__0)) 
+                     & (0U != (7U & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                     >> 3U)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:345: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel Get carries invalid param (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 345, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:347: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 347, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1324(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1324\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h88ad6e02__0)) 
+                     & ((0xffU & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U] 
+                                  >> 0x11U)) != ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                   | (((2U 
+                                                        < 
+                                                        (0xfU 
+                                                         & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                            >> 6U))) 
+                                                       | (0x600040U 
+                                                          == 
+                                                          (0x6000c0U 
+                                                           & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                      | (0x700000U 
+                                                         == 
+                                                         (0x700000U 
+                                                          & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                  << 7U) 
+                                                 | ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                      | (((2U 
+                                                           < 
+                                                           (0xfU 
+                                                            & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                               >> 6U))) 
+                                                          | (0x600040U 
+                                                             == 
+                                                             (0x6000c0U 
+                                                              & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                         | (0x600000U 
+                                                            == 
+                                                            (0x700000U 
+                                                             & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                     << 6U) 
+                                                    | ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                         | (((2U 
+                                                              < 
+                                                              (0xfU 
+                                                               & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                  >> 6U))) 
+                                                             | (0x400040U 
+                                                                == 
+                                                                (0x6000c0U 
+                                                                 & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                            | (0x500000U 
+                                                               == 
+                                                               (0x700000U 
+                                                                & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                        << 5U) 
+                                                       | ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                            | (((2U 
+                                                                 < 
+                                                                 (0xfU 
+                                                                  & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                     >> 6U))) 
+                                                                | (0x400040U 
+                                                                   == 
+                                                                   (0x6000c0U 
+                                                                    & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                               | (0x400000U 
+                                                                  == 
+                                                                  (0x700000U 
+                                                                   & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                           << 4U) 
+                                                          | ((((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                               | (((2U 
+                                                                    < 
+                                                                    (0xfU 
+                                                                     & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                        >> 6U))) 
+                                                                   | (0x200040U 
+                                                                      == 
+                                                                      (0x6000c0U 
+                                                                       & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                  | (0x300000U 
+                                                                     == 
+                                                                     (0x700000U 
+                                                                      & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                              << 3U) 
+                                                             | ((((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                                  | (((2U 
+                                                                       < 
+                                                                       (0xfU 
+                                                                        & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                           >> 6U))) 
+                                                                      | (0x200040U 
+                                                                         == 
+                                                                         (0x6000c0U 
+                                                                          & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                     | (0x200000U 
+                                                                        == 
+                                                                        (0x700000U 
+                                                                         & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                                 << 2U) 
+                                                                | ((((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                                     | (((2U 
+                                                                          < 
+                                                                          (0xfU 
+                                                                           & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                              >> 6U))) 
+                                                                         | (0x40U 
+                                                                            == 
+                                                                            (0x6000c0U 
+                                                                             & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                        | (0x100000U 
+                                                                           == 
+                                                                           (0x700000U 
+                                                                            & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                                    << 1U) 
+                                                                   | ((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                                      | (((2U 
+                                                                           < 
+                                                                           (0xfU 
+                                                                            & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                               >> 6U))) 
+                                                                          | (0x40U 
+                                                                             == 
+                                                                             (0x6000c0U 
+                                                                              & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                         | (0U 
+                                                                            == 
+                                                                            (0x700000U 
+                                                                             & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))))))))))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:351: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel Get contains invalid mask (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 351, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:353: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 353, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1325(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1325\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h88ad6e02__0)) 
+                     & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[3U] 
+                        >> 0x19U)))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:357: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel Get is corrupt (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 357, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:359: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 359, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc15e95e8__0)) 
+                     & (~ ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__fixer__DOT__monitor__DOT___GEN_18) 
+                           & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__monitor__DOT___GEN_8)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:363: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel carries PutFull type which is unexpected using diplomatic parameters (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 363, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:365: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 365, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1326(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1326\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc15e95e8__0)) 
+                     & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__fixer__DOT__monitor__DOT__source_ok))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:369: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel PutFull carries invalid source ID (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 369, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:371: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 371, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc15e95e8__0)) 
+                     & (0U != (0xfffU & ((~ ((IData)(0xfffU) 
+                                             << (0xfU 
+                                                 & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                    >> 6U)))) 
+                                         & ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                             << 0xcU) 
+                                            | (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                               >> 0x14U)))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:375: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel PutFull address not aligned to size (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 375, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:377: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 377, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1327(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1327\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc15e95e8__0)) 
+                     & (0U != (7U & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                     >> 3U)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:381: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel PutFull carries invalid param (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 381, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:383: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 383, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc15e95e8__0)) 
+                     & ((0xffU & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U] 
+                                  >> 0x11U)) != ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                   | (((2U 
+                                                        < 
+                                                        (0xfU 
+                                                         & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                            >> 6U))) 
+                                                       | (0x600040U 
+                                                          == 
+                                                          (0x6000c0U 
+                                                           & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                      | (0x700000U 
+                                                         == 
+                                                         (0x700000U 
+                                                          & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                  << 7U) 
+                                                 | ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                      | (((2U 
+                                                           < 
+                                                           (0xfU 
+                                                            & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                               >> 6U))) 
+                                                          | (0x600040U 
+                                                             == 
+                                                             (0x6000c0U 
+                                                              & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                         | (0x600000U 
+                                                            == 
+                                                            (0x700000U 
+                                                             & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                     << 6U) 
+                                                    | ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                         | (((2U 
+                                                              < 
+                                                              (0xfU 
+                                                               & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                  >> 6U))) 
+                                                             | (0x400040U 
+                                                                == 
+                                                                (0x6000c0U 
+                                                                 & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                            | (0x500000U 
+                                                               == 
+                                                               (0x700000U 
+                                                                & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                        << 5U) 
+                                                       | ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                            | (((2U 
+                                                                 < 
+                                                                 (0xfU 
+                                                                  & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                     >> 6U))) 
+                                                                | (0x400040U 
+                                                                   == 
+                                                                   (0x6000c0U 
+                                                                    & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                               | (0x400000U 
+                                                                  == 
+                                                                  (0x700000U 
+                                                                   & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                           << 4U) 
+                                                          | ((((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                               | (((2U 
+                                                                    < 
+                                                                    (0xfU 
+                                                                     & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                        >> 6U))) 
+                                                                   | (0x200040U 
+                                                                      == 
+                                                                      (0x6000c0U 
+                                                                       & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                  | (0x300000U 
+                                                                     == 
+                                                                     (0x700000U 
+                                                                      & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                              << 3U) 
+                                                             | ((((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                                  | (((2U 
+                                                                       < 
+                                                                       (0xfU 
+                                                                        & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                           >> 6U))) 
+                                                                      | (0x200040U 
+                                                                         == 
+                                                                         (0x6000c0U 
+                                                                          & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                     | (0x200000U 
+                                                                        == 
+                                                                        (0x700000U 
+                                                                         & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                                 << 2U) 
+                                                                | ((((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                                     | (((2U 
+                                                                          < 
+                                                                          (0xfU 
+                                                                           & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                              >> 6U))) 
+                                                                         | (0x40U 
+                                                                            == 
+                                                                            (0x6000c0U 
+                                                                             & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                        | (0x100000U 
+                                                                           == 
+                                                                           (0x700000U 
+                                                                            & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                                    << 1U) 
+                                                                   | ((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                                      | (((2U 
+                                                                           < 
+                                                                           (0xfU 
+                                                                            & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                               >> 6U))) 
+                                                                          | (0x40U 
+                                                                             == 
+                                                                             (0x6000c0U 
+                                                                              & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                         | (0U 
+                                                                            == 
+                                                                            (0x700000U 
+                                                                             & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))))))))))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:387: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel PutFull contains invalid mask (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 387, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:389: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 389, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1328(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1328\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc155756b__0)) 
+                     & (~ ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__fixer__DOT__monitor__DOT___GEN_18) 
+                           & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__monitor__DOT___GEN_8)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:393: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel carries PutPartial type which is unexpected using diplomatic parameters (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 393, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:395: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 395, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc155756b__0)) 
+                     & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__fixer__DOT__monitor__DOT__source_ok))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:399: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel PutPartial carries invalid source ID (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 399, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:401: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 401, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1329(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1329\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc155756b__0)) 
+                     & (0U != (0xfffU & ((~ ((IData)(0xfffU) 
+                                             << (0xfU 
+                                                 & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                    >> 6U)))) 
+                                         & ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                             << 0xcU) 
+                                            | (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                               >> 0x14U)))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:405: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel PutPartial address not aligned to size (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 405, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:407: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 407, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc155756b__0)) 
+                     & (0U != (7U & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                     >> 3U)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:411: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel PutPartial carries invalid param (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 411, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:413: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 413, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1330(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1330\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc155756b__0)) 
+                     & (0U != (0xffU & (((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U] 
+                                          << 0xfU) 
+                                         | (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U] 
+                                            >> 0x11U)) 
+                                        & (~ ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                | (((2U 
+                                                     < 
+                                                     (0xfU 
+                                                      & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                         >> 6U))) 
+                                                    | (0x600040U 
+                                                       == 
+                                                       (0x6000c0U 
+                                                        & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                   | (0x700000U 
+                                                      == 
+                                                      (0x700000U 
+                                                       & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                               << 7U) 
+                                              | ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                   | (((2U 
+                                                        < 
+                                                        (0xfU 
+                                                         & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                            >> 6U))) 
+                                                       | (0x600040U 
+                                                          == 
+                                                          (0x6000c0U 
+                                                           & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                      | (0x600000U 
+                                                         == 
+                                                         (0x700000U 
+                                                          & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                  << 6U) 
+                                                 | ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                      | (((2U 
+                                                           < 
+                                                           (0xfU 
+                                                            & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                               >> 6U))) 
+                                                          | (0x400040U 
+                                                             == 
+                                                             (0x6000c0U 
+                                                              & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                         | (0x500000U 
+                                                            == 
+                                                            (0x700000U 
+                                                             & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                     << 5U) 
+                                                    | ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                         | (((2U 
+                                                              < 
+                                                              (0xfU 
+                                                               & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                  >> 6U))) 
+                                                             | (0x400040U 
+                                                                == 
+                                                                (0x6000c0U 
+                                                                 & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                            | (0x400000U 
+                                                               == 
+                                                               (0x700000U 
+                                                                & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                        << 4U) 
+                                                       | ((((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                            | (((2U 
+                                                                 < 
+                                                                 (0xfU 
+                                                                  & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                     >> 6U))) 
+                                                                | (0x200040U 
+                                                                   == 
+                                                                   (0x6000c0U 
+                                                                    & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                               | (0x300000U 
+                                                                  == 
+                                                                  (0x700000U 
+                                                                   & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                           << 3U) 
+                                                          | ((((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                               | (((2U 
+                                                                    < 
+                                                                    (0xfU 
+                                                                     & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                        >> 6U))) 
+                                                                   | (0x200040U 
+                                                                      == 
+                                                                      (0x6000c0U 
+                                                                       & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                  | (0x200000U 
+                                                                     == 
+                                                                     (0x700000U 
+                                                                      & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                              << 2U) 
+                                                             | ((((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                                  | (((2U 
+                                                                       < 
+                                                                       (0xfU 
+                                                                        & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                           >> 6U))) 
+                                                                      | (0x40U 
+                                                                         == 
+                                                                         (0x6000c0U 
+                                                                          & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                     | (0x100000U 
+                                                                        == 
+                                                                        (0x700000U 
+                                                                         & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                                 << 1U) 
+                                                                | ((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                                   | (((2U 
+                                                                        < 
+                                                                        (0xfU 
+                                                                         & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                            >> 6U))) 
+                                                                       | (0x40U 
+                                                                          == 
+                                                                          (0x6000c0U 
+                                                                           & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                      | (0U 
+                                                                         == 
+                                                                         (0x700000U 
+                                                                          & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))))))))))))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:417: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel PutPartial contains invalid mask (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 417, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:419: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 419, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1331(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1331\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc181768e__0)) 
+                     & (~ ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__fixer__DOT__monitor__DOT___GEN_18) 
+                           & ((4U > (0xfU & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                             >> 6U))) 
+                              & (3U == (3U & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U])))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:423: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel carries Arithmetic type which is unexpected using diplomatic parameters (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 423, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:425: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 425, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc181768e__0)) 
+                     & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__fixer__DOT__monitor__DOT__source_ok))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:429: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel Arithmetic carries invalid source ID (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 429, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:431: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 431, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1332(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1332\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc181768e__0)) 
+                     & (0U != (0xfffU & ((~ ((IData)(0xfffU) 
+                                             << (0xfU 
+                                                 & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                    >> 6U)))) 
+                                         & ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                             << 0xcU) 
+                                            | (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                               >> 0x14U)))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:435: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel Arithmetic address not aligned to size (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 435, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:437: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 437, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc181768e__0)) 
+                     & (4U < (7U & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                    >> 3U)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:441: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel Arithmetic carries invalid opcode param (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 441, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:443: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 443, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1333(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1333\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc181768e__0)) 
+                     & ((0xffU & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U] 
+                                  >> 0x11U)) != ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                   | (((2U 
+                                                        < 
+                                                        (0xfU 
+                                                         & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                            >> 6U))) 
+                                                       | (0x600040U 
+                                                          == 
+                                                          (0x6000c0U 
+                                                           & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                      | (0x700000U 
+                                                         == 
+                                                         (0x700000U 
+                                                          & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                  << 7U) 
+                                                 | ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                      | (((2U 
+                                                           < 
+                                                           (0xfU 
+                                                            & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                               >> 6U))) 
+                                                          | (0x600040U 
+                                                             == 
+                                                             (0x6000c0U 
+                                                              & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                         | (0x600000U 
+                                                            == 
+                                                            (0x700000U 
+                                                             & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                     << 6U) 
+                                                    | ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                         | (((2U 
+                                                              < 
+                                                              (0xfU 
+                                                               & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                  >> 6U))) 
+                                                             | (0x400040U 
+                                                                == 
+                                                                (0x6000c0U 
+                                                                 & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                            | (0x500000U 
+                                                               == 
+                                                               (0x700000U 
+                                                                & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                        << 5U) 
+                                                       | ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                            | (((2U 
+                                                                 < 
+                                                                 (0xfU 
+                                                                  & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                     >> 6U))) 
+                                                                | (0x400040U 
+                                                                   == 
+                                                                   (0x6000c0U 
+                                                                    & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                               | (0x400000U 
+                                                                  == 
+                                                                  (0x700000U 
+                                                                   & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                           << 4U) 
+                                                          | ((((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                               | (((2U 
+                                                                    < 
+                                                                    (0xfU 
+                                                                     & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                        >> 6U))) 
+                                                                   | (0x200040U 
+                                                                      == 
+                                                                      (0x6000c0U 
+                                                                       & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                  | (0x300000U 
+                                                                     == 
+                                                                     (0x700000U 
+                                                                      & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                              << 3U) 
+                                                             | ((((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                                  | (((2U 
+                                                                       < 
+                                                                       (0xfU 
+                                                                        & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                           >> 6U))) 
+                                                                      | (0x200040U 
+                                                                         == 
+                                                                         (0x6000c0U 
+                                                                          & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                     | (0x200000U 
+                                                                        == 
+                                                                        (0x700000U 
+                                                                         & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                                 << 2U) 
+                                                                | ((((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                                     | (((2U 
+                                                                          < 
+                                                                          (0xfU 
+                                                                           & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                              >> 6U))) 
+                                                                         | (0x40U 
+                                                                            == 
+                                                                            (0x6000c0U 
+                                                                             & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                        | (0x100000U 
+                                                                           == 
+                                                                           (0x700000U 
+                                                                            & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                                    << 1U) 
+                                                                   | ((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                                      | (((2U 
+                                                                           < 
+                                                                           (0xfU 
+                                                                            & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                               >> 6U))) 
+                                                                          | (0x40U 
+                                                                             == 
+                                                                             (0x6000c0U 
+                                                                              & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                         | (0U 
+                                                                            == 
+                                                                            (0x700000U 
+                                                                             & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))))))))))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:447: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel Arithmetic contains invalid mask (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 447, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:449: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 449, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1334(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1334\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc2a19c46__0)) 
+                     & (~ ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__fixer__DOT__monitor__DOT___GEN_18) 
+                           & ((4U > (0xfU & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                             >> 6U))) 
+                              & (3U == (3U & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U])))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:453: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel carries Logical type which is unexpected using diplomatic parameters (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 453, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:455: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 455, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc2a19c46__0)) 
+                     & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__fixer__DOT__monitor__DOT__source_ok))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:459: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel Logical carries invalid source ID (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 459, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:461: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 461, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1335(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1335\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc2a19c46__0)) 
+                     & (0U != (0xfffU & ((~ ((IData)(0xfffU) 
+                                             << (0xfU 
+                                                 & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                    >> 6U)))) 
+                                         & ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                             << 0xcU) 
+                                            | (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                               >> 0x14U)))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:465: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel Logical address not aligned to size (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 465, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:467: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 467, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc2a19c46__0)) 
+                     & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                        >> 5U)))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:471: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel Logical carries invalid opcode param (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 471, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:473: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 473, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1336(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1336\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_hc2a19c46__0)) 
+                     & ((0xffU & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U] 
+                                  >> 0x11U)) != ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                   | (((2U 
+                                                        < 
+                                                        (0xfU 
+                                                         & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                            >> 6U))) 
+                                                       | (0x600040U 
+                                                          == 
+                                                          (0x6000c0U 
+                                                           & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                      | (0x700000U 
+                                                         == 
+                                                         (0x700000U 
+                                                          & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                  << 7U) 
+                                                 | ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                      | (((2U 
+                                                           < 
+                                                           (0xfU 
+                                                            & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                               >> 6U))) 
+                                                          | (0x600040U 
+                                                             == 
+                                                             (0x6000c0U 
+                                                              & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                         | (0x600000U 
+                                                            == 
+                                                            (0x700000U 
+                                                             & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                     << 6U) 
+                                                    | ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                         | (((2U 
+                                                              < 
+                                                              (0xfU 
+                                                               & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                  >> 6U))) 
+                                                             | (0x400040U 
+                                                                == 
+                                                                (0x6000c0U 
+                                                                 & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                            | (0x500000U 
+                                                               == 
+                                                               (0x700000U 
+                                                                & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                        << 5U) 
+                                                       | ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                            | (((2U 
+                                                                 < 
+                                                                 (0xfU 
+                                                                  & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                     >> 6U))) 
+                                                                | (0x400040U 
+                                                                   == 
+                                                                   (0x6000c0U 
+                                                                    & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                               | (0x400000U 
+                                                                  == 
+                                                                  (0x700000U 
+                                                                   & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                           << 4U) 
+                                                          | ((((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                               | (((2U 
+                                                                    < 
+                                                                    (0xfU 
+                                                                     & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                        >> 6U))) 
+                                                                   | (0x200040U 
+                                                                      == 
+                                                                      (0x6000c0U 
+                                                                       & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                  | (0x300000U 
+                                                                     == 
+                                                                     (0x700000U 
+                                                                      & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                              << 3U) 
+                                                             | ((((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                                  | (((2U 
+                                                                       < 
+                                                                       (0xfU 
+                                                                        & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                           >> 6U))) 
+                                                                      | (0x200040U 
+                                                                         == 
+                                                                         (0x6000c0U 
+                                                                          & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                     | (0x200000U 
+                                                                        == 
+                                                                        (0x700000U 
+                                                                         & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                                 << 2U) 
+                                                                | ((((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                                     | (((2U 
+                                                                          < 
+                                                                          (0xfU 
+                                                                           & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                              >> 6U))) 
+                                                                         | (0x40U 
+                                                                            == 
+                                                                            (0x6000c0U 
+                                                                             & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                        | (0x100000U 
+                                                                           == 
+                                                                           (0x700000U 
+                                                                            & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                                    << 1U) 
+                                                                   | ((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                                      | (((2U 
+                                                                           < 
+                                                                           (0xfU 
+                                                                            & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                               >> 6U))) 
+                                                                          | (0x40U 
+                                                                             == 
+                                                                             (0x6000c0U 
+                                                                              & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                         | (0U 
+                                                                            == 
+                                                                            (0x700000U 
+                                                                             & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))))))))))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:477: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel Logical contains invalid mask (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 477, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:479: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 479, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1337(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1337\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h895e4d60__0)) 
+                     & (~ ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__fixer__DOT__monitor__DOT___GEN_18) 
+                           & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__monitor__DOT___GEN_8)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:483: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel carries Hint type which is unexpected using diplomatic parameters (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 483, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:485: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 485, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h895e4d60__0)) 
+                     & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__fixer__DOT__monitor__DOT__source_ok))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:489: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel Hint carries invalid source ID (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 489, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:491: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 491, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1338(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1338\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h895e4d60__0)) 
+                     & (0U != (0xfffU & ((~ ((IData)(0xfffU) 
+                                             << (0xfU 
+                                                 & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                    >> 6U)))) 
+                                         & ((vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                             << 0xcU) 
+                                            | (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                               >> 0x14U)))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:495: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel Hint address not aligned to size (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 495, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:497: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 497, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h895e4d60__0)) 
+                     & (0U != (3U & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                     >> 4U)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:501: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel Hint carries invalid opcode param (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 501, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:503: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 503, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1339(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1339\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h895e4d60__0)) 
+                     & ((0xffU & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[1U] 
+                                  >> 0x11U)) != ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                   | (((2U 
+                                                        < 
+                                                        (0xfU 
+                                                         & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                            >> 6U))) 
+                                                       | (0x600040U 
+                                                          == 
+                                                          (0x6000c0U 
+                                                           & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                      | (0x700000U 
+                                                         == 
+                                                         (0x700000U 
+                                                          & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                  << 7U) 
+                                                 | ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                      | (((2U 
+                                                           < 
+                                                           (0xfU 
+                                                            & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                               >> 6U))) 
+                                                          | (0x600040U 
+                                                             == 
+                                                             (0x6000c0U 
+                                                              & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                         | (0x600000U 
+                                                            == 
+                                                            (0x700000U 
+                                                             & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                     << 6U) 
+                                                    | ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                         | (((2U 
+                                                              < 
+                                                              (0xfU 
+                                                               & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                  >> 6U))) 
+                                                             | (0x400040U 
+                                                                == 
+                                                                (0x6000c0U 
+                                                                 & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                            | (0x500000U 
+                                                               == 
+                                                               (0x700000U 
+                                                                & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                        << 5U) 
+                                                       | ((((IData)(vlSelf->__VdfgTmp_h17919355__0) 
+                                                            | (((2U 
+                                                                 < 
+                                                                 (0xfU 
+                                                                  & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                     >> 6U))) 
+                                                                | (0x400040U 
+                                                                   == 
+                                                                   (0x6000c0U 
+                                                                    & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                               | (0x400000U 
+                                                                  == 
+                                                                  (0x700000U 
+                                                                   & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                           << 4U) 
+                                                          | ((((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                               | (((2U 
+                                                                    < 
+                                                                    (0xfU 
+                                                                     & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                        >> 6U))) 
+                                                                   | (0x200040U 
+                                                                      == 
+                                                                      (0x6000c0U 
+                                                                       & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                  | (0x300000U 
+                                                                     == 
+                                                                     (0x700000U 
+                                                                      & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                              << 3U) 
+                                                             | ((((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                                  | (((2U 
+                                                                       < 
+                                                                       (0xfU 
+                                                                        & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                           >> 6U))) 
+                                                                      | (0x200040U 
+                                                                         == 
+                                                                         (0x6000c0U 
+                                                                          & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                     | (0x200000U 
+                                                                        == 
+                                                                        (0x700000U 
+                                                                         & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                                 << 2U) 
+                                                                | ((((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                                     | (((2U 
+                                                                          < 
+                                                                          (0xfU 
+                                                                           & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                              >> 6U))) 
+                                                                         | (0x40U 
+                                                                            == 
+                                                                            (0x6000c0U 
+                                                                             & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                        | (0x100000U 
+                                                                           == 
+                                                                           (0x700000U 
+                                                                            & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U])))) 
+                                                                    << 1U) 
+                                                                   | ((IData)(vlSelf->__VdfgTmp_he1d3c937__0) 
+                                                                      | (((2U 
+                                                                           < 
+                                                                           (0xfU 
+                                                                            & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U] 
+                                                                               >> 6U))) 
+                                                                          | (0x40U 
+                                                                             == 
+                                                                             (0x6000c0U 
+                                                                              & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))) 
+                                                                         | (0U 
+                                                                            == 
+                                                                            (0x700000U 
+                                                                             & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[0U]))))))))))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:507: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel Hint contains invalid mask (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 507, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:509: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 509, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1340(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1340\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___out_xbar_auto_out_0_a_valid) 
+                      & (IData)(vlSelf->__VdfgTmp_h895e4d60__0)) 
+                     & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__buffer__DOT__nodeOut_a_q__DOT___ram_ext_R0_data[3U] 
+                        >> 0x19U)))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:513: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'A' channel Hint is corrupt (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:42 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 513, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:515: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 515, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___wrapped_error_device_auto_buffer_in_d_valid) 
+                      & (~ (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT___system_auto_cbus_fixedClockNode_out_reset))) 
+                     & (7U == (7U & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U]))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:519: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'D' channel has invalid opcode (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 519, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:521: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 521, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1341(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1341\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___wrapped_error_device_auto_buffer_in_d_valid) 
+                      & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__monitor__DOT____VdfgTmp_h3f6fcfea__0)) 
+                     & (~ ((0U == (3U & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                         >> 0x11U))) 
+                           | ((0x100U == (0x3ffU & 
+                                          (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                           >> 9U))) 
+                              | ((0x101U == (0x3ffU 
+                                             & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                                >> 9U))) 
+                                 | ((0x102U == (0x3ffU 
+                                                & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                                   >> 9U))) 
+                                    | (0x200U == (0x3ffU 
+                                                  & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                                     >> 9U))))))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:525: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'D' channel ReleaseAck carries invalid source ID (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 525, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:527: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 527, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___wrapped_error_device_auto_buffer_in_d_valid) 
+                      & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__monitor__DOT____VdfgTmp_h3f6fcfea__0)) 
+                     & (3U > (0xfU & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                      >> 5U)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:531: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'D' channel ReleaseAck smaller than a beat (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 531, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:533: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 533, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1342(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1342\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___wrapped_error_device_auto_buffer_in_d_valid) 
+                      & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__monitor__DOT____VdfgTmp_h3f6fcfea__0)) 
+                     & (0U != (3U & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                     >> 3U)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:537: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'D' channel ReleaseeAck carries invalid param (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 537, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:539: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 539, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___wrapped_error_device_auto_buffer_in_d_valid) 
+                      & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__monitor__DOT____VdfgTmp_h3f6fcfea__0)) 
+                     & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[2U] 
+                        >> 0x15U)))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:543: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'D' channel ReleaseAck is corrupt (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 543, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:545: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 545, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1343(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1343\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___wrapped_error_device_auto_buffer_in_d_valid) 
+                      & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__monitor__DOT____VdfgTmp_h3f6fcfea__0)) 
+                     & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                        >> 0x14U)))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:549: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'D' channel ReleaseAck is denied (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 549, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:551: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 551, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___wrapped_error_device_auto_buffer_in_d_valid) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0) 
+                         & (4U == (7U & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U])))) 
+                     & (~ ((0U == (3U & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                         >> 0x11U))) 
+                           | ((0x100U == (0x3ffU & 
+                                          (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                           >> 9U))) 
+                              | ((0x101U == (0x3ffU 
+                                             & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                                >> 9U))) 
+                                 | ((0x102U == (0x3ffU 
+                                                & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                                   >> 9U))) 
+                                    | (0x200U == (0x3ffU 
+                                                  & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                                     >> 9U))))))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:555: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'D' channel Grant carries invalid source ID (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 555, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:557: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 557, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1344(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1344\n"); );
+    // Body
+    if (VL_UNLIKELY(((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___wrapped_error_device_auto_buffer_in_d_valid) 
+                     & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0) 
+                        & (4U == (7U & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U])))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:561: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'D' channel Grant carries invalid sink ID (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 561, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:563: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 563, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___wrapped_error_device_auto_buffer_in_d_valid) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0) 
+                         & (4U == (7U & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U])))) 
+                     & (3U > (0xfU & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                      >> 5U)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:567: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'D' channel Grant smaller than a beat (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 567, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:569: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 569, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1345(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1345\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___wrapped_error_device_auto_buffer_in_d_valid) 
+                      & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0)) 
+                     & (0x1cU == (0x1fU & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U]))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:573: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'D' channel Grant carries invalid cap param (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 573, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:575: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 575, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___wrapped_error_device_auto_buffer_in_d_valid) 
+                      & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0)) 
+                     & (0x14U == (0x1fU & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U]))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:579: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'D' channel Grant carries toN param (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 579, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:581: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 581, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1346(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1346\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___wrapped_error_device_auto_buffer_in_d_valid) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0) 
+                         & (4U == (7U & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U])))) 
+                     & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[2U] 
+                        >> 0x15U)))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:585: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'D' channel Grant is corrupt (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 585, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:587: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 587, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___wrapped_error_device_auto_buffer_in_d_valid) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0) 
+                         & (5U == (7U & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U])))) 
+                     & (~ ((0U == (3U & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                         >> 0x11U))) 
+                           | ((0x100U == (0x3ffU & 
+                                          (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                           >> 9U))) 
+                              | ((0x101U == (0x3ffU 
+                                             & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                                >> 9U))) 
+                                 | ((0x102U == (0x3ffU 
+                                                & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                                   >> 9U))) 
+                                    | (0x200U == (0x3ffU 
+                                                  & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                                     >> 9U))))))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:591: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'D' channel GrantData carries invalid source ID (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 591, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:593: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 593, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1347(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1347\n"); );
+    // Body
+    if (VL_UNLIKELY(((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___wrapped_error_device_auto_buffer_in_d_valid) 
+                     & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0) 
+                        & (5U == (7U & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U])))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:597: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'D' channel GrantData carries invalid sink ID (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 597, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:599: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 599, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___wrapped_error_device_auto_buffer_in_d_valid) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0) 
+                         & (5U == (7U & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U])))) 
+                     & (3U > (0xfU & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                      >> 5U)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:603: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'D' channel GrantData smaller than a beat (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 603, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:605: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 605, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1348(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1348\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___wrapped_error_device_auto_buffer_in_d_valid) 
+                      & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0)) 
+                     & (0x1dU == (0x1fU & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U]))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:609: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'D' channel GrantData carries invalid cap param (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 609, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:611: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 611, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___wrapped_error_device_auto_buffer_in_d_valid) 
+                      & (IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0)) 
+                     & (0x15U == (0x1fU & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U]))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:615: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'D' channel GrantData carries toN param (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 615, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:617: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 617, "");
+        }
+    }
+}
+
+VL_INLINE_OPT void VTestDriver___024root___nba_sequent__TOP__1349(VTestDriver___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VTestDriver__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VTestDriver___024root___nba_sequent__TOP__1349\n"); );
+    // Body
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___wrapped_error_device_auto_buffer_in_d_valid) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0) 
+                         & (5U == (7U & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U])))) 
+                     & (~ ((~ (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                               >> 0x14U)) | (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[2U] 
+                                             >> 0x15U)))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:621: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'D' channel GrantData is denied but not corrupt (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 621, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:623: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 623, "");
+        }
+    }
+    if (VL_UNLIKELY((((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT___wrapped_error_device_auto_buffer_in_d_valid) 
+                      & ((IData)(vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__chipyard_prcictrl_domain__DOT__resetSynchronizer__DOT__nodeOut_member_allClocks_uncore_reset_catcher__DOT__io_sync_reset_chain__DOT__output_chain__DOT__sync_0) 
+                         & (0U == (7U & vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U])))) 
+                     & (~ ((0U == (3U & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                         >> 0x11U))) 
+                           | ((0x100U == (0x3ffU & 
+                                          (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                           >> 9U))) 
+                              | ((0x101U == (0x3ffU 
+                                             & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                                >> 9U))) 
+                                 | ((0x102U == (0x3ffU 
+                                                & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                                   >> 9U))) 
+                                    | (0x200U == (0x3ffU 
+                                                  & (vlSelf->TestDriver__DOT__testHarness__DOT__chiptop0__DOT__system__DOT__cbus__DOT__wrapped_error_device__DOT__buffer__DOT__nodeIn_d_q__DOT___ram_ext_R0_data[0U] 
+                                                     >> 9U))))))))))) {
+        VL_WRITEF("[%0t] %%Error: TLMonitor_21.sv:627: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor: Assertion failed: 'D' channel AccessAck carries invalid source ID (connected at generators/rocket-chip/src/main/scala/devices/tilelink/CanHaveBuiltInDevices.scala:44:9)\n    at Monitor.scala:49 assert(cond, message)\n\n",
+                  64,VL_TIME_UNITED_Q(1000),-9,vlSymsp->name());
+        VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 627, "");
+        if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->TestDriver__DOT__reset))))) {
+            VL_WRITEF("[%0t] %%Fatal: TLMonitor_21.sv:629: Assertion failed in %NTestDriver.testHarness.chiptop0.system.cbus.wrapped_error_device.buffer.monitor\n",
+                      64,VL_TIME_UNITED_Q(1000),-9,
+                      vlSymsp->name());
+            VL_STOP_MT("/home/riscv/Documents/Chipyard/SavvinaThesis/chipyard/sims/verilator/generated-src/chipyard.harness.TestHarness.PerfCountRocketConfig/gen-collateral/TLMonitor_21.sv", 629, "");
+        }
+    }
+}
