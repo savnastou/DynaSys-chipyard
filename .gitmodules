@@ -157,3 +157,9 @@
 [submodule "generators/tacit"]
 	path = generators/tacit
 	url = https://github.com/ucb-bar/tacit.git
+[submodule "hwacha"]
+	path = hwacha
+	url = https://github.com/ucb-bar/hwacha.git
+[submodule "generators/hwacha"]
+	path = generators/hwacha
+	url = https://github.com/ucb-bar/hwacha.git
