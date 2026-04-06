@@ -1,3 +1,10 @@
+## DynaSys 
+
+This repo features the implementation of DynaSys - a hardware-software cooperative prefetching technique for dynamic linked lists, implemented on a RISCV-based SoC. This work was developed in the scope of an ECE NTUA Diploma Thesis.
+    
+* **Thesis Information and Full Report**: http://artemis.cslab.ece.ntua.gr:8080/jspui/handle/123456789/20069
+* **DynaSys Thesis Presentation**: https://docs.google.com/presentation/d/1E0g7ziBcQ7pxLsH3w3u-FGBFMeInx69Iltpmp3ySRDQ/edit?usp=sharing
+
 ![CHIPYARD](https://github.com/ucb-bar/chipyard/raw/main/docs/_static/images/chipyard-logo-full.png)
 
 # Chipyard Framework [![Test](https://github.com/ucb-bar/chipyard/actions/workflows/chipyard-run-tests.yml/badge.svg)](https://github.com/ucb-bar/chipyard/actions)
